@@ -1,0 +1,8 @@
+mixin infoContainer(imgInfo,titleInfo,descriptionInfo, btnInfo)
+  .infoContainer.d-flex
+    div(class="infoContainer__img" style=`background-image: url(img/${imgInfo})`)
+    .infoContainer__information
+      h1.infoContainer__title #{titleInfo}
+      .infoContainer__linea.border-linea
+      p.infoContainer__description #{descriptionInfo}
+      button.infoContainer__btn.buttonStyle #{btnInfo}

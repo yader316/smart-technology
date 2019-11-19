@@ -1,0 +1,9 @@
+mixin products(imgProduct,nameProduct,btnMore)
+  .productContainer.d-flex-direction
+    figure.productContainer__img-container
+      img(src=`img/${imgProduct}`, alt="").productContainer__img
+    .productContainer__linea.border-linea
+    .productContainer__info.d-flex
+      h1.productContainer__title #{nameProduct}
+      button.productContainer__btn.buttonStyle #{btnMore}
+  

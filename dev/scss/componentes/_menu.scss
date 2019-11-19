@@ -1,0 +1,22 @@
+.menu{
+  display: flex;
+  &__items{
+    margin: .5rem;
+    list-style: none;
+  }
+  &__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5rem;
+    color: map-get($color-pages, principal);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease-in;
+    &:hover{
+      font-weight: bold;
+      color: map-get($color-pages, secondary);
+      border-bottom: 2px solid map-get($color-pages, principal);      
+    }
+  }
+}

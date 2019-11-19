@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@import "basic/variables";
+@import "basic/funciones";
+@import "basic/class-basic";
+@import "componentes/menu";
+@import "componentes/info-container";
+@import "componentes/product";
+@import "componentes/mulimedia";
+@import "componentes/modal";
+@import "componentes/contact";
+@import "componentes/menu-responsive";
+
+
+.main-wrapper{
+  background-image: img-url('wifi-grey.png');
+  background: {
+    size: 40%;
+    position: 90% -50px;
+    repeat: no-repeat;
+  };
+}
+.header-container{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  &__navigator{
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3rem;
+  }
+  &__img-container{
+    width: 20%;
+  }
+  &__img{
+    width: 100%;
+  }
+}
+.home-container{
+  margin-bottom: 4rem;
+}
+.smart-items{
+  width: 100%;
+  background-color: map-get($color-pages, cuarto);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  &__title{
+    width: 100%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: white;
+    background-color: map-get($color-pages, tertiary);
+  }
+}
+.moments-container{
+  margin-bottom: 5rem;
+  &__title{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+  &__multimedia{
+    width: 100%;
+  }
+  &__container-one{
+    width: 40%;
+  }
+  &__container-two{
+    width: 60%;
+  }
+  &__plug-container,
+  &__cam-container{
+    height: 50%;
+  }
+  &__imgOne-container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  &__imgOne{
+    width:60%;
+  }
+  &__imgTwo-container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  &__imgTwo{
+    width: 70%;
+
+  }
+  &__imgOne,
+  &__imgTwo{
+    position: relative;
+  }
+  &__play{
+    background-image: img-url('icons/play-button2.png');
+    background: {
+      repeat: no-repeat;
+      size: cover;
+      position: top center;
+    };
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    &:hover{
+      background-image: img-url('icons/play-button.png');
+    }
+  }
+}
+.contact-container{
+  width: 100%;
+  &__img{
+    width: 50%;
+    background-image: img-url('movil-smart.png');
+    background: {
+      size: cover;
+      position: top center;
+      repeat: no-repeat;
+    };
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-wrapper{
+    background: none;
+  }
+  .menu{
+    display: none;
+    &__link{
+      color: white;
+      font-size: 1rem;
+    }
+  }
+  .menu-transform{
+    display: inline-block;
+  }
+  .header-container{
+    width: 100%;
+    margin-top: 0;
+    &__img-container,
+    &__navigator{
+      width: 50%;
+      padding: 1rem 2rem;
+    }
+  }
+  .home-container{
+    width: 100%;
+  }
+  .infoContainer{
+    width: 100%;
+    &__img{
+      display: none;
+    }
+    &__information{
+      width: 100%;
+      margin: 0 1rem;
+    }
+    &__btn{
+      margin-bottom: 0;
+    }
+  }
+  .productContainer{
+    width: 100%;
+    &__img-container{
+      width: 40%;
+    }
+    &__info{
+      width: 100%;
+    }
+    &__title{
+      font-size: 1rem;
+    }
+  }
+  .moments-container{
+    // display: none;
+    width: 100%;
+    &__container-one,
+    &__container-two{
+      width: 100%;
+    }
+    &__multimedia,
+    &__cam-container,
+    &__plug-container{
+      width: 100%;
+      flex-direction: column;
+    }
+    &__imgOne-container{
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__imgOne,
+    &__imgTwo{
+      margin-bottom: 2rem;
+    }
+  }
+  .multimediaContainer{
+    width: 100%;
+    flex-direction: column;
+    &__video{
+      width: 100%;
+      margin: 0;
+    }
+    &__info{
+      width: 100%;
+      padding-top: 0;
+    }
+    &__title{
+      margin-bottom: 1rem;
+    }
+  }
+  .contact-container{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-image: img-url('movil-smart.png');
+    background: {
+      size: cover;
+      position: right center;
+      repeat: no-repeat;
+    };
+    &__img{
+      display: none;
+    }
+  }
+  .contactUs{
+    width: 100%;
+    &__title{
+      text-align: center;
+    }
+    &__paragraph{
+      padding: 0 2rem;
+    }
+    &__txtarea{
+      width: 80%;
+      margin: 1rem 0;
+      justify-self: center;
+      align-self: center;
+    }  
+    &__info-container{
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__info{
+      justify-content: center;
+      align-items: center;
+    }
+    &__txtname,
+    &__txtemail,
+    &__telefono{
+      width: 80%;
+      margin: 1rem 0;
+    }
+    &__btn{
+      margin: 2rem 0;
+      align-self: center;
+    }
+  }
+}

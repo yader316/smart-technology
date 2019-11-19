@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Venta de articulos electronico inteligente">
+    <title>Home - Smart Technology</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+  </head>
+  <body class="body-container">
+    <main class="main-wrapper">  
+      <header class="header-container container d-flex">
+        <figure class="header-container__img-container"><img class="header-container__img" src="img/logo-smart.png" alt=""></figure>
+        <nav class="header-container__navigator d-flex">
+          <ul class="menu"> 
+            <li class="menu__items"><a class="menu__link" href="#">home</a></li>
+            <li class="menu__items"><a class="menu__link" href="#">about us</a></li>
+            <li class="menu__items"><a class="menu__link" href="#">news</a></li>
+            <li class="menu__items"><a class="menu__link" href="#">store</a></li>
+            <li class="menu__items"><a class="menu__link" href="#">contact us</a></li>
+          </ul>
+          <div class="menu-transform" id="dropMenu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </nav>
+      </header>
+      <section class="home-container container">
+        <div class="infoContainer d-flex">
+          <div class="infoContainer__img" style="background-image: url(img/casa-wifi.png)"></div>
+          <div class="infoContainer__information">
+            <h1 class="infoContainer__title">control all appliances and spark pulg from your cell phone</h1>
+            <div class="infoContainer__linea border-linea"></div>
+            <p class="infoContainer__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptates, sequi, aliquam sed quis beatae culpa placeat consequuntur iste harum ea animi iusto facilis vitae repudiandae quaerat quam perferendis dolorum.</p>
+            <button class="infoContainer__btn buttonStyle">our products</button>
+          </div>
+        </div>
+      </section>
+      <section class="smart-items d-flex-direction">
+        <h1 class="smart-items__title">smart items</h1>
+        <div class="smart-items__products container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="productContainer d-flex-direction">
+                  <figure class="productContainer__img-container"><img class="productContainer__img" src="img/bujia.png" alt=""/></figure>
+                  <div class="productContainer__linea border-linea"></div>
+                  <div class="productContainer__info d-flex">
+                    <h1 class="productContainer__title">spark plugs smart</h1>
+                    <button class="productContainer__btn buttonStyle">view more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="productContainer d-flex-direction">
+                  <figure class="productContainer__img-container"><img class="productContainer__img" src="img/nav-camGrande.png" alt=""/></figure>
+                  <div class="productContainer__linea border-linea"></div>
+                  <div class="productContainer__info d-flex">
+                    <h1 class="productContainer__title">camara 360 grado</h1>
+                    <button class="productContainer__btn buttonStyle">view more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="productContainer d-flex-direction">
+                  <figure class="productContainer__img-container"><img class="productContainer__img" src="img/nav-cam-panGrande.png" alt=""/></figure>
+                  <div class="productContainer__linea border-linea"></div>
+                  <div class="productContainer__info d-flex">
+                    <h1 class="productContainer__title">camara 90 grado</h1>
+                    <button class="productContainer__btn buttonStyle">view more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="productContainer d-flex-direction">
+                  <figure class="productContainer__img-container"><img class="productContainer__img" src="img/nav-plugGrande.png" alt=""/></figure>
+                  <div class="productContainer__linea border-linea"></div>
+                  <div class="productContainer__info d-flex">
+                    <h1 class="productContainer__title">plug inteligente</h1>
+                    <button class="productContainer__btn buttonStyle">view more</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="productContainer d-flex-direction">
+                  <figure class="productContainer__img-container"><img class="productContainer__img" src="img/nav-senseGrande.png" alt=""/></figure>
+                  <div class="productContainer__linea border-linea"></div>
+                  <div class="productContainer__info d-flex">
+                    <h1 class="productContainer__title">sensor de movimiento</h1>
+                    <button class="productContainer__btn buttonStyle">view more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <section class="moments-container d-flex-direction container">
+        <h1 class="moments-container__title">smart technology testing</h1>
+        <div class="moments-container__multimedia d-flex">
+          <div class="moments-container__container-one">
+            <figure class="moments-container__imgOne-container d-flex"><img class="moments-container__imgOne" src="img/bujia.png" alt="" id="myImg">
+              <div class="moments-container__play" onclick="openModal();currentSlide(1)"></div>
+            </figure>
+          </div>
+          <div class="moments-container__container-two d-flex-direction"> 
+            <div class="moments-container__cam-container d-flex">
+              <figure class="moments-container__imgTwo-container d-flex"><img class="moments-container__imgTwo" src="img/nav-cam.png" alt="" id="myImg">
+                <div class="moments-container__play" onclick="openModal();currentSlide(2)"></div>
+              </figure>
+              <figure class="moments-container__imgTwo-container d-flex"><img class="moments-container__imgTwo" src="img/nav-cam-pan.png" alt="" id="myImg">
+                <div class="moments-container__play" onclick="openModal();currentSlide(3)"></div>
+              </figure>
+            </div>
+            <div class="moments-container__plug-container d-flex">
+              <figure class="moments-container__imgTwo-container d-flex"><img class="moments-container__imgTwo" src="img/nav-plug.jpg" alt="" id="myImg">
+                <div class="moments-container__play" onclick="openModal();currentSlide(4)"></div>
+              </figure>
+              <figure class="moments-container__imgTwo-container d-flex"><img class="moments-container__imgTwo" src="img/nav-sense.png" alt="" id="myImg">
+                <div class="moments-container__play" onclick="openModal();currentSlide(5)"></div>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal"><span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1/5</div>
+              <div class="multimediaContainer d-flex">
+                <video class="multimediaContainer__video" src="videos/video1.mp4" controls="controls" poster="img/bujia.png"></video>
+                <div class="multimediaContainer__info d-flex-direction">
+                  <h1 class="multimediaContainer__title">bujia inteligente</h1>
+                  <p class="multimediaContainer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2/5</div>
+              <div class="multimediaContainer d-flex">
+                <video class="multimediaContainer__video" src="videos/video1.mp4" controls="controls" poster="img/nav-cam.png"></video>
+                <div class="multimediaContainer__info d-flex-direction">
+                  <h1 class="multimediaContainer__title">camara 360 grado</h1>
+                  <p class="multimediaContainer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">3/5</div>
+              <div class="multimediaContainer d-flex">
+                <video class="multimediaContainer__video" src="videos/video1.mp4" controls="controls" poster="img/nav-cam-pan.png"></video>
+                <div class="multimediaContainer__info d-flex-direction">
+                  <h1 class="multimediaContainer__title">camara 90 grado</h1>
+                  <p class="multimediaContainer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">4/5</div>
+              <div class="multimediaContainer d-flex">
+                <video class="multimediaContainer__video" src="videos/video1.mp4" controls="controls" poster="img/nav-plug.jpg"></video>
+                <div class="multimediaContainer__info d-flex-direction">
+                  <h1 class="multimediaContainer__title">enchufle inteligente</h1>
+                  <p class="multimediaContainer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5/5</div>
+              <div class="multimediaContainer d-flex">
+                <video class="multimediaContainer__video" src="videos/video1.mp4" controls="controls" poster="img/nav-sense.png"></video>
+                <div class="multimediaContainer__info d-flex-direction">
+                  <h1 class="multimediaContainer__title">sensor de movimiento</h1>
+                  <p class="multimediaContainer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div><a class="prev" onclick="plusSlides(-1)">❮</a><a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact-container d-flex">
+        <div class="contact-container__img"></div>
+        <div class="contactUs d-flex-direction">
+          <h1 class="contactUs__title">contac us</h1>
+          <p class="contactUs__paragraph">Please send your message below. we will get back to you as soon as possible</p>
+          <form class="contactUs__form d-flex-direction" action="">
+            <textarea class="contactUs__txtarea" name="" placeholder="Message"></textarea>
+            <div class="contactUs__info-container d-flex">
+              <div class="contactUs__info d-flex-direction">
+                <input class="contactUs__txtname" type="text" placeholder="Your Name" required="required"/>
+                <input class="contactUs__telefono" type="tel" name="" placeholder="505 0000-0000" pattern="[0-9]{3} [0-9]{4}[-][0-9]{4}" title="Un número de teléfono válido consta de un código de área de 3 dígitos, un espacio, los cuatros primeros dígitos del número, un espacio o un guión (-) y cuatro dígitos más." required="required"/>
+                <input class="contactUs__txtemail" type="email" placeholder="example@example.com" required="required"/>
+              </div>
+              <button class="contactUs__btn buttonStyle">send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/sliderProducts.js"></script>
+  <script src="js/modalMultimedia.js"></script>
+  <script src="js/menuResponsive.js"></script>
+</html>

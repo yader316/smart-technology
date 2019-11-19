@@ -1,0 +1,22 @@
+.multimediaContainer{
+  width: 100%;
+  &__video{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 1rem;
+    box-shadow: 0 0 5px 1px black;
+  }
+  &__info{
+    width: 50%;
+    align-items: center;
+    padding: 2rem;
+  }
+  &__title,
+  &__description{
+    color: white;
+  }
+  &__title{
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+  }
+}

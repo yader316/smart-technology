@@ -1,0 +1,13 @@
+mixin contactUs
+  .contactUs.d-flex-direction
+    h1.contactUs__title contac us
+    p.contactUs__paragraph
+      | Please send your message below. we will get back to you as soon as possible
+    form(action="").contactUs__form.d-flex-direction
+      textarea(name="" , placeholder="Message").contactUs__txtarea
+      .contactUs__info-container.d-flex
+        .contactUs__info.d-flex-direction
+          input(type="text", placeholder="Your Name" required).contactUs__txtname
+          input(type="tel", name="" placeholder="505 0000-0000" pattern="[0-9]{3} [0-9]{4}[-][0-9]{4}" title="Un número de teléfono válido consta de un código de área de 3 dígitos, un espacio, los cuatros primeros dígitos del número, un espacio o un guión (-) y cuatro dígitos más." required).contactUs__telefono
+          input(type="email",placeholder="example@example.com" required).contactUs__txtemail
+        button.contactUs__btn.buttonStyle send

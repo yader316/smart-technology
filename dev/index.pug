@@ -1,0 +1,83 @@
+extends pages/includes/template
+append config
+  -pageTitle='Home'
+prepend styles
+  link(rel="stylesheet", href="css/swiper.min.css")
+block content
+  main.main-wrapper   
+    header.header-container.container.d-flex
+      figure.header-container__img-container
+        img(src="img/logo-smart.png", alt="").header-container__img
+      nav.header-container__navigator.d-flex
+        +menu
+        +menu-responsive
+    section.home-container.container
+      +infoContainer('casa-wifi.png','control all appliances and spark pulg from your cell phone','Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptates, sequi, aliquam sed quis beatae culpa placeat consequuntur iste harum ea animi iusto facilis vitae repudiandae quaerat quam perferendis dolorum.','our products')
+    section.smart-items.d-flex-direction
+      h1.smart-items__title smart items
+      .smart-items__products.container
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              +products('bujia.png','spark plugs smart','view more')
+            .swiper-slide
+              +products('nav-camGrande.png','camara 360 grado','view more')
+            .swiper-slide
+              +products('nav-cam-panGrande.png','camara 90 grado','view more')
+            .swiper-slide
+              +products('nav-plugGrande.png','plug inteligente','view more')
+            .swiper-slide
+              +products('nav-senseGrande.png','sensor de movimiento','view more')
+          .swiper-pagination
+          .swiper-button-next
+          .swiper-button-prev
+    section.moments-container.d-flex-direction.container
+      h1.moments-container__title smart technology testing
+      .moments-container__multimedia.d-flex
+        .moments-container__container-one
+          figure.moments-container__imgOne-container.d-flex
+            img(src="img/bujia.png", alt="" ).moments-container__imgOne#myImg
+            .moments-container__play(onclick="openModal();currentSlide(1)")
+        .moments-container__container-two.d-flex-direction  
+          .moments-container__cam-container.d-flex
+            figure.moments-container__imgTwo-container.d-flex
+              img(src="img/nav-cam.png", alt="").moments-container__imgTwo#myImg
+              .moments-container__play(onclick="openModal();currentSlide(2)")
+            figure.moments-container__imgTwo-container.d-flex
+              img(src="img/nav-cam-pan.png", alt="").moments-container__imgTwo#myImg
+              .moments-container__play(onclick="openModal();currentSlide(3)")
+          .moments-container__plug-container.d-flex
+            figure.moments-container__imgTwo-container.d-flex
+              img(src="img/nav-plug.jpg", alt="").moments-container__imgTwo#myImg
+              .moments-container__play(onclick="openModal();currentSlide(4)")
+            figure.moments-container__imgTwo-container.d-flex
+              img(src="img/nav-sense.png", alt="").moments-container__imgTwo#myImg
+              .moments-container__play(onclick="openModal();currentSlide(5)")
+      .modal#myModal
+        span.close.cursor(onclick="closeModal()") &times;
+        .modal-content
+          .mySlides
+            .numbertext 1/5
+            +multimedia('video1.mp4','bujia.png','bujia inteligente','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+          .mySlides
+            .numbertext 2/5
+            +multimedia('video1.mp4','nav-cam.png','camara 360 grado','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+          .mySlides
+            .numbertext 3/5
+            +multimedia('video1.mp4','nav-cam-pan.png','camara 90 grado','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+          .mySlides
+            .numbertext 4/5
+            +multimedia('video1.mp4','nav-plug.jpg','enchufle inteligente','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+          .mySlides
+            .numbertext 5/5
+            +multimedia('video1.mp4','nav-sense.png','sensor de movimiento','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+          a(onclick='plusSlides(-1)').prev ❮
+          a(onclick='plusSlides(1)').next ❯
+    section.contact-container.d-flex
+      .contact-container__img
+      +contactUs
+block script
+  script(src="js/swiper.min.js")
+  script(src="js/sliderProducts.js")
+  script(src="js/modalMultimedia.js")
+  script(src="js/menuResponsive.js")

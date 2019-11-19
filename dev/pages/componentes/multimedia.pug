@@ -1,0 +1,6 @@
+mixin multimedia(video,imgVideo,nameMultimedia, descriptionMultimedia)
+  .multimediaContainer.d-flex
+    video(src=`videos/${video}` controls poster=`img/${imgVideo}`).multimediaContainer__video
+    .multimediaContainer__info.d-flex-direction
+      h1.multimediaContainer__title #{nameMultimedia}
+      p.multimediaContainer__description #{descriptionMultimedia}

@@ -1,0 +1,23 @@
+block config
+    include config
+include ../componentes/menu
+include ../componentes/info-container
+include ../componentes/products
+include ../componentes/multimedia
+include ../componentes/contact
+include ../componentes/menu-responsive
+
+
+doctype
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(name="description" content= metaDescription)
+        title= `${pageTitle} - ${siteName}`
+        link(rel="stylesheet", href="css/styles.css")
+        block styles
+    body.body-container
+        block content
+    block script

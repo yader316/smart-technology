@@ -1,0 +1,35 @@
+.container{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.d-flex{
+  display: flex;
+}
+.d-flex-direction{
+  display: flex;
+  flex-direction: column;
+}
+.d-grid{
+  display: grid;
+}
+.body-container{
+  overflow-x: hidden;
+}
+.border-linea{
+  border-bottom: 2px solid map-get($color-pages,secondary);
+  margin: .5rem 0;
+}
+.buttonStyle{
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .3s ease-in;
+  background-color: map-get($color-pages, principal);
+  &:hover{
+    background-color: map-get($color-pages, secondary);
+  }
+}
