@@ -1,5 +1,6 @@
 .contactUs{
   width: 50%;
+  padding-bottom: 3rem;
   background-color: rgba(0, 0, 0, .8);
   &__title{
     text-transform: uppercase;
@@ -58,10 +59,13 @@
     border-bottom: 2px solid map-get($color-pages, secondary);
     }
   }
+  &__txtemail{
+    margin-bottom: 5rem;
+  }
   &__btn{
     align-self: flex-end;
     background-color: map-get($color-pages, principal);
     padding: .5rem 2rem;
-    margin: 0 4rem 2rem 0;
+    margin: 0 4rem;
   }
 }

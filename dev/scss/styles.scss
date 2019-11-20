@@ -124,6 +124,7 @@
 .contact-container{
   width: 100%;
   &__img{
+    justify-content: flex-end;
     width: 50%;
     background-image: img-url('movil-smart.png');
     background: {
@@ -131,6 +132,24 @@
       position: top center;
       repeat: no-repeat;
     };
+  }
+  &__btnApp{
+    align-self: flex-end;
+    margin: 2rem;
+    padding: .5rem 2rem;
+  }
+}
+.footer-container{
+  padding: 2rem 0;
+  &__img-container{
+    width: 40%;
+  }
+  &__img{
+    width: 100%;
+  }
+  &__navigation{
+    width: 60%;
+    justify-content: flex-end;
   }
 }
 
@@ -270,6 +289,16 @@
     &__btn{
       margin: 2rem 0;
       align-self: center;
+    }
+  }
+  .footer-container{
+    width: 100%;
+    &__navigation{
+      width: 0;
+    }
+    &__img-container{
+      width: 100%;
+      padding: 1rem 2rem;
     }
   }
 }

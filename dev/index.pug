@@ -12,7 +12,7 @@ block content
         +menu
         +menu-responsive
     section.home-container.container
-      +infoContainer('casa-wifi.png','control all appliances and spark pulg from your cell phone','Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptates, sequi, aliquam sed quis beatae culpa placeat consequuntur iste harum ea animi iusto facilis vitae repudiandae quaerat quam perferendis dolorum.','our products')
+      +infoContainer('smart-home.png','control all appliances and spark pulg from your cell phone','Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptates, sequi, aliquam sed quis beatae culpa placeat consequuntur iste harum ea animi iusto facilis vitae repudiandae quaerat quam perferendis dolorum.','our products')
     section.smart-items.d-flex-direction
       h1.smart-items__title smart items
       .smart-items__products.container
@@ -74,8 +74,14 @@ block content
           a(onclick='plusSlides(-1)').prev ❮
           a(onclick='plusSlides(1)').next ❯
     section.contact-container.d-flex
-      .contact-container__img
+      .contact-container__img.d-flex
+        button.contact-container__btnApp.buttonStyle download app
       +contactUs
+    footer.footer-container.container.d-flex
+      figure.footer-container__img-container
+        img(src="img/logo-smart-title.png", alt="").footer-container__img
+      nav.footer-container__navigation.d-flex
+        +menu
 block script
   script(src="js/swiper.min.js")
   script(src="js/sliderProducts.js")
