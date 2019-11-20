@@ -1,6 +1,5 @@
 .contactUs{
   width: 50%;
-  padding-bottom: 3rem;
   background-color: rgba(0, 0, 0, .8);
   &__title{
     text-transform: uppercase;
@@ -59,8 +58,21 @@
     border-bottom: 2px solid map-get($color-pages, secondary);
     }
   }
-  &__txtemail{
-    margin-bottom: 5rem;
+  &__redes{
+    width: 100%;
+    margin: 2rem 3rem;
+  }
+  &__redes-container{
+    margin-right: 2rem;
+  }
+  &__whatsapp,
+  &__facebook{
+    width: 30px;
+  }
+  &__numberWhatsapp,
+  &__correoFace{
+    padding-left: 1rem;
+    color: white;
   }
   &__btn{
     align-self: flex-end;

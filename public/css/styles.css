@@ -336,35 +336,34 @@
 /* line 1, dev/scss/componentes/_contact.scss */
 .contactUs {
   width: 50%;
-  padding-bottom: 3rem;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 5, dev/scss/componentes/_contact.scss */
+/* line 4, dev/scss/componentes/_contact.scss */
 .contactUs__title {
   text-transform: uppercase;
   font-size: 2rem;
   padding: 2rem;
 }
 
-/* line 10, dev/scss/componentes/_contact.scss */
+/* line 9, dev/scss/componentes/_contact.scss */
 .contactUs__paragraph {
   padding-left: 3rem;
   margin-bottom: 2rem;
 }
 
-/* line 14, dev/scss/componentes/_contact.scss */
+/* line 13, dev/scss/componentes/_contact.scss */
 .contactUs__title, .contactUs__paragraph {
   color: white;
   width: 100%;
 }
 
-/* line 19, dev/scss/componentes/_contact.scss */
+/* line 18, dev/scss/componentes/_contact.scss */
 .contactUs__form {
   width: 100%;
 }
 
-/* line 22, dev/scss/componentes/_contact.scss */
+/* line 21, dev/scss/componentes/_contact.scss */
 .contactUs__txtarea {
   width: 90%;
   height: 200px;
@@ -373,25 +372,25 @@
   border: 1px solid #2c95c0;
 }
 
-/* line 28, dev/scss/componentes/_contact.scss */
+/* line 27, dev/scss/componentes/_contact.scss */
 .contactUs__txtarea:focus {
   border: 1px solid #7bb801;
 }
 
-/* line 32, dev/scss/componentes/_contact.scss */
+/* line 31, dev/scss/componentes/_contact.scss */
 .contactUs__info {
   width: 100%;
   -webkit-box-pack: justify;
           justify-content: space-between;
 }
 
-/* line 36, dev/scss/componentes/_contact.scss */
+/* line 35, dev/scss/componentes/_contact.scss */
 .contactUs__txtname, .contactUs__txtemail, .contactUs__telefono {
   width: 300px;
   height: 40px;
 }
 
-/* line 42, dev/scss/componentes/_contact.scss */
+/* line 41, dev/scss/componentes/_contact.scss */
 .contactUs__txtname, .contactUs__txtemail, .contactUs__txtarea, .contactUs__telefono {
   font-size: 1rem;
   margin: 0 3rem 2rem;
@@ -401,23 +400,40 @@
   color: white;
 }
 
-/* line 53, dev/scss/componentes/_contact.scss */
+/* line 52, dev/scss/componentes/_contact.scss */
 .contactUs__txtname, .contactUs__txtemail, .contactUs__telefono {
   border: none;
   border-bottom: 2px solid #2c95c0;
 }
 
-/* line 58, dev/scss/componentes/_contact.scss */
+/* line 57, dev/scss/componentes/_contact.scss */
 .contactUs__txtname:focus, .contactUs__txtemail:focus, .contactUs__telefono:focus {
   border-bottom: 2px solid #7bb801;
 }
 
-/* line 62, dev/scss/componentes/_contact.scss */
-.contactUs__txtemail {
-  margin-bottom: 5rem;
+/* line 61, dev/scss/componentes/_contact.scss */
+.contactUs__redes {
+  width: 100%;
+  margin: 2rem 3rem;
 }
 
 /* line 65, dev/scss/componentes/_contact.scss */
+.contactUs__redes-container {
+  margin-right: 2rem;
+}
+
+/* line 68, dev/scss/componentes/_contact.scss */
+.contactUs__whatsapp, .contactUs__facebook {
+  width: 30px;
+}
+
+/* line 72, dev/scss/componentes/_contact.scss */
+.contactUs__numberWhatsapp, .contactUs__correoFace {
+  padding-left: 1rem;
+  color: white;
+}
+
+/* line 77, dev/scss/componentes/_contact.scss */
 .contactUs__btn {
   align-self: flex-end;
   background-color: #2c95c0;
@@ -835,15 +851,25 @@
     margin: 2rem 0;
     align-self: center;
   }
-  /* line 294, dev/scss/styles.scss */
+  /* line 293, dev/scss/styles.scss */
+  .contactUs__redes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  /* line 296, dev/scss/styles.scss */
+  .contactUs__redes-container {
+    margin-bottom: 1rem;
+  }
+  /* line 300, dev/scss/styles.scss */
   .footer-container {
     width: 100%;
   }
-  /* line 296, dev/scss/styles.scss */
+  /* line 302, dev/scss/styles.scss */
   .footer-container__navigation {
     width: 0;
   }
-  /* line 299, dev/scss/styles.scss */
+  /* line 305, dev/scss/styles.scss */
   .footer-container__img-container {
     width: 100%;
     padding: 1rem 2rem;

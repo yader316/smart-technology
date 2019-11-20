@@ -290,6 +290,12 @@
       margin: 2rem 0;
       align-self: center;
     }
+    &__redes{
+      flex-direction: column;
+    }
+    &__redes-container{
+      margin-bottom: 1rem;
+    }
   }
   .footer-container{
     width: 100%;

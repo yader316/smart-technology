@@ -11,3 +11,10 @@ mixin contactUs
           input(type="tel", name="" placeholder="505 0000-0000" pattern="[0-9]{3} [0-9]{4}[-][0-9]{4}" title="Un número de teléfono válido consta de un código de área de 3 dígitos, un espacio, los cuatros primeros dígitos del número, un espacio o un guión (-) y cuatro dígitos más." required).contactUs__telefono
           input(type="email",placeholder="example@example.com" required).contactUs__txtemail
         button.contactUs__btn.buttonStyle send
+    .contactUs__redes.d-flex
+      figure.contactUs__redes-container.d-flex
+        img(src="img/icons/whatsapp.png", alt="").contactUs__whatsapp
+        p.contactUs__numberWhatsapp 505 1234 - 1234
+      figure.contactUs__redes-container.d-flex
+        img(src="img/icons/facebook.png", alt="").contactUs__facebook
+        p.contactUs__correoFace smartTechnology@gmail.com
