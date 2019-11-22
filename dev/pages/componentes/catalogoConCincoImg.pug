@@ -1,0 +1,29 @@
+mixin catalogoConCincoImg(title,price,description,image1,image2,image3,image4,image5)
+  .catalogo.d-flex
+    .catalogo__infoContainer.d-flex-direction
+      h1.catalogo__title #{title}
+      h2.catalogo__price #{price} 
+      .catalogo__linea.border-linea
+      p.catalogo__description #{description}
+      button.catalogo__btn.buttonStyle order now
+    .catalogo__imgContainer
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            figure.catalogo__figure-container
+              img(src=`img/catalogo/${image1}`, alt="").catalogo__img
+          .swiper-slide
+            figure.catalogo__figure-container
+              img(src=`img/catalogo/${image2}`, alt="").catalogo__img
+          .swiper-slide
+            figure.catalogo__figure-container
+              img(src=`img/catalogo/${image3}`, alt="").catalogo__img
+          .swiper-slide
+            figure.catalogo__figure-container
+              img(src=`img/catalogo/${image4}`, alt="").catalogo__img
+          .swiper-slide
+            figure.catalogo__figure-container
+              img(src=`img/catalogo/${image5}`, alt="").catalogo__img
+        .swiper-pagination
+        .swiper-button-next
+        .swiper-button-prev

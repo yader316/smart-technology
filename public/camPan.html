@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalogo Cam Pan - Smart Technology</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+  </head>
+  <body class="body-container">
+    <header class="header-container container d-flex">
+      <figure class="header-container__img-container"><img class="header-container__img" src="img/logo-smart.png" alt=""></figure>
+      <nav class="header-container__navigator d-flex">
+        <ul class="menu"> 
+          <li class="menu__items"><a class="menu__link" href="../public/index.html">home</a></li>
+          <li class="menu__items"><a class="menu__link" href="#">about us</a></li>
+          <li class="menu__items"><a class="menu__link" href="#">news</a></li>
+          <li class="menu__items"><a class="menu__link" href="#">store</a></li>
+          <li class="menu__items"><a class="menu__link" href="#">contact us</a></li>
+        </ul>
+        <div class="menu-transform" id="dropMenu" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+    </header>
+    <section class="camInfo-container container">
+      <div class="catalogo d-flex">
+        <div class="catalogo__infoContainer d-flex-direction">
+          <h1 class="catalogo__title">cam pan 360 grado</h1>
+          <h2 class="catalogo__price">$ 70 dolar </h2>
+          <div class="catalogo__linea border-linea"></div>
+          <p class="catalogo__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button class="catalogo__btn buttonStyle">order now</button>
+        </div>
+        <div class="catalogo__imgContainer">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <figure class="catalogo__figure-container"><img class="catalogo__img" src="img/catalogo/pan_front.jpg" alt=""/></figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="catalogo__figure-container"><img class="catalogo__img" src="img/catalogo/pan_left_2.jpg" alt=""/></figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="catalogo__figure-container"><img class="catalogo__img" src="img/catalogo/pan_right_2.jpg" alt=""/></figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="catalogo__figure-container"><img class="catalogo__img" src="img/catalogo/see-entire-room-mobile1.png" alt=""/></figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="catalogo__figure-container"><img class="catalogo__img" src="img/catalogo/wcpmk-prod1.png" alt=""/></figure>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="specification-container"></section>
+  </body>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/sliderCatalogo.js"></script>
+  <script src="js/menuResponsive.js"></script>
+</html>

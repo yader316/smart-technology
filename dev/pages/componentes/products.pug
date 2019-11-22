@@ -1,9 +1,9 @@
-mixin products(imgProduct,nameProduct,btnMore)
+mixin products(imgProduct,nameProduct,btnMore,link)
   .productContainer.d-flex-direction
     figure.productContainer__img-container
       img(src=`img/${imgProduct}`, alt="").productContainer__img
     .productContainer__linea.border-linea
     .productContainer__info.d-flex
       h1.productContainer__title #{nameProduct}
-      button.productContainer__btn.buttonStyle #{btnMore}
+      a(href=`${link}`).productContainer__btn.buttonStyle #{btnMore}
   

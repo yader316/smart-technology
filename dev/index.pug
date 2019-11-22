@@ -8,7 +8,7 @@ block content
     header.header-container.container.d-flex
       figure.header-container__img-container
         img(src="img/logo-smart.png", alt="").header-container__img
-      nav.header-container__navigator.d-flex
+      nav.header-container__navigator.d-flex#navigation
         +menu
         +menu-responsive
     section.home-container.container
@@ -19,15 +19,15 @@ block content
         .swiper-container
           .swiper-wrapper
             .swiper-slide
-              +products('bujia.png','spark plugs smart','view more')
+              +products('bujia.png','spark plugs smart','view more','#')
             .swiper-slide
-              +products('nav-camGrande.png','camara 360 grado','view more')
+              +products('nav-camGrande.png','camara 360 grado','view more','../public/cam.html')
             .swiper-slide
-              +products('nav-cam-panGrande.png','camara 90 grado','view more')
+              +products('nav-cam-panGrande.png','camara 90 grado','view more','../public/camPan.html')
             .swiper-slide
-              +products('nav-plugGrande.png','plug inteligente','view more')
+              +products('nav-plugGrande.png','plug inteligente','view more','#')
             .swiper-slide
-              +products('nav-senseGrande.png','sensor de movimiento','view more')
+              +products('nav-senseGrande.png','sensor de movimiento','view more','../public/sense.html')
           .swiper-pagination
           .swiper-button-next
           .swiper-button-prev

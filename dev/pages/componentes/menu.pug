@@ -1,11 +1,51 @@
+//- -
+//-     var pages = [
+//-         {
+//-             title: 'home',
+//-             url: '../public/index.html',
+//-             child: []
+//-         },
+//-         {
+//-             title: 'products',
+//-             url: '',
+//-             child: [
+//-                 {
+//-                     title: 'cam',
+//-                     url: '../public/cam.html'
+//-                 },
+//-                 {
+//-                     title: 'cam pan',
+//-                     url: ''
+//-                 }
+//-             ]
+//-         },
+//-         {
+//-             title: 'contact us',
+//-             url: 'contact.html',
+//-             child: []
+//-         }
+//-     ]
+
 mixin menu
   ul.menu 
-    li.menu__items: a(href="#").menu__link home
+    li.menu__items: a(href="../public/index.html").menu__link home
     li.menu__items: a(href="#").menu__link about us
     li.menu__items: a(href="#").menu__link news
     li.menu__items: a(href="#").menu__link store
     li.menu__items: a(href="#").menu__link contact us
 
+  //- ul.menu#menu
+  //-   each page in pages
+  //-     li.menu__items
+  //-       a(href= page.url).menu__link= page.title
+  //-       if page.child.length > 0
+  //-         ul.menu__subMenu
+  //-           each subPage in page.child
+  //-             li.menu__items: a(href= subPage.url).menu__link= subPage.title
+  
+          
+
+  
 
     
 

@@ -1,0 +1,20 @@
+extends pages/includes/catalogo
+append config
+  -pageTitle = 'Catalogo Cam'
+prepend styles
+  link(rel="stylesheet", href="css/swiper.min.css")
+block content   
+  header.header-container.container.d-flex
+    figure.header-container__img-container
+      img(src="img/logo-smart.png", alt="").header-container__img
+    nav.header-container__navigator.d-flex
+      +menu
+      +menu-responsive
+  section.camInfo-container.container
+    +catalogoConCincoImg('cam 360 grado','$ 50 dolar','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','wyze_cam_front.jpg','wyze_cam_front_2.jpg','wyze_cam_mounted.jpg','wyze_cam_sit_1.jpg','wyze_cam_sit_2.jpg')
+  section.specification-container
+      
+block script
+  script(src="js/swiper.min.js")
+  script(src="js/sliderCatalogo.js")
+  script(src="js/menuResponsive.js")

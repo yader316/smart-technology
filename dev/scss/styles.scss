@@ -16,6 +16,8 @@
 @import "componentes/modal";
 @import "componentes/contact";
 @import "componentes/menu-responsive";
+@import "componentes/catalogoConCincoImg";
+
 
 
 .main-wrapper{
@@ -152,7 +154,10 @@
     justify-content: flex-end;
   }
 }
-
+// pages style camConCincoImages
+.camInfo-container{
+  margin-bottom: 3rem;
+}
 @media screen and (max-width: 900px) {
   .main-wrapper{
     background: none;
@@ -242,6 +247,19 @@
       margin-bottom: 1rem;
     }
   }
+  .prev{
+    left: -30px;
+    padding: 0;
+  }
+  .next{
+    right: -30px;
+    padding: 0;
+
+  }
+  .close {
+    top: 0;
+    right: 10px;
+  }
   .contact-container{
     width: 100%;
     display: inline-block;
@@ -307,4 +325,35 @@
       padding: 1rem 2rem;
     }
   }
+  // pages style camConCincoImg resposive
+  .camInfo-container{
+    width: 100%;
+  }
+  .catalogo{
+    flex-direction: column;
+    &__infoContainer,
+    &__imgContainer,
+    &__description{
+      width: 100%;
+    }
+    &__imgContainer{
+      margin: 3rem 0;
+    }
+    &__title{
+      text-align: center;
+    }
+    &__price{
+      padding-left: 2rem;
+    }
+    &__linea{
+      margin-left: 2rem;
+    }
+    &__description{
+      padding: 0 2rem 2rem 3rem;
+    }
+    &__btn{
+      margin-left: 2rem;
+    }
+  }
+ 
 }

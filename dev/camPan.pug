@@ -1,0 +1,20 @@
+extends pages/includes/catalogo 
+append config
+  -pageTitle = 'Catalogo Cam Pan'
+prepend styles
+  link(rel="stylesheet", href="css/swiper.min.css")
+block content
+  header.header-container.container.d-flex
+    figure.header-container__img-container
+      img(src="img/logo-smart.png", alt="").header-container__img
+    nav.header-container__navigator.d-flex
+      +menu
+      +menu-responsive
+  section.camInfo-container.container
+    +catalogoConCincoImg('cam pan 360 grado','$ 70 dolar','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','pan_front.jpg','pan_left_2.jpg','pan_right_2.jpg','see-entire-room-mobile1.png','wcpmk-prod1.png')
+  section.specification-container
+      
+block script
+  script(src="js/swiper.min.js")
+  script(src="js/sliderCatalogo.js")
+  script(src="js/menuResponsive.js")

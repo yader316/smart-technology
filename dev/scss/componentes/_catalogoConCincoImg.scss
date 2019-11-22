@@ -1,0 +1,36 @@
+.catalogo{
+  &__infoContainer{
+    justify-content: center;
+  }
+  &__title{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  &__price{
+    text-transform: capitalize;
+    padding: 1rem 0 0 1rem;
+    color: map-get($color-pages, principal);
+  }
+  &__linea{
+    width: 50%;
+    margin-left: 1rem;
+  }
+  &__description{
+    padding: 0 3rem 2rem;
+  }
+  &__btn{
+    align-self: flex-start;
+    padding: .5rem 2rem;
+  }
+  &__infoContainer{
+    width: 60%;
+  }
+  &__imgContainer{
+    width: 40%;
+  }
+  &__figure-container,
+  &__img{
+    width: 100%;
+  }
+}
