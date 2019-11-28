@@ -420,20 +420,21 @@
 /* line 64, dev/scss/componentes/_contact.scss */
 .contactUs__redes-container {
   margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* line 67, dev/scss/componentes/_contact.scss */
+/* line 68, dev/scss/componentes/_contact.scss */
 .contactUs__whatsapp, .contactUs__facebook {
   width: 30px;
 }
 
-/* line 71, dev/scss/componentes/_contact.scss */
+/* line 72, dev/scss/componentes/_contact.scss */
 .contactUs__numberWhatsapp, .contactUs__correoFace {
   padding-left: 1rem;
   color: white;
 }
 
-/* line 76, dev/scss/componentes/_contact.scss */
+/* line 77, dev/scss/componentes/_contact.scss */
 .contactUs__btn {
   align-self: flex-end;
   background-color: #2c95c0;
