@@ -1,0 +1,6 @@
+mixin accordion(title,description)
+  .accordion
+    div(class=`accordion__item closeAccordion`)
+      h2.accordion__itemHeading #{title}
+      .accordion__itemContent.d-flex-direction
+        p.accordion__description #{description}

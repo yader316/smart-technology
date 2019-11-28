@@ -3,6 +3,12 @@
   &__items{
     margin: .5rem;
     list-style: none;
+    // position:relative;
+    // float:left;
+    // transition: all .3s ease-in;
+    // &:hover .menu__subMenu{
+    //   display: block;
+    // }
   }
   &__link{
     text-decoration: none;
@@ -19,4 +25,22 @@
       border-bottom: 2px solid map-get($color-pages, principal);      
     }
   }
+  // &__subMenu{
+  //   display: none;
+  //   position:absolute;
+  //   top:100%;
+  //   left:0;
+  // }
+  // &__subItems{
+  //   float:none;
+  //   margin: .5rem;
+  //   list-style: none;
+  //   width: 150px;
+  // }
+  // &__subLink{
+  //   // padding:5px ;
+  //   // color: white;
+  //   text-decoration: none;  
+  // }
+
 }

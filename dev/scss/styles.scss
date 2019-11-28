@@ -16,8 +16,8 @@
 @import "componentes/modal";
 @import "componentes/contact";
 @import "componentes/menu-responsive";
-@import "componentes/catalogoConCincoImg";
-
+@import "componentes/cam";
+@import "componentes/scroll-top";
 
 
 .main-wrapper{
@@ -153,10 +153,6 @@
     width: 60%;
     justify-content: flex-end;
   }
-}
-// pages style camConCincoImages
-.camInfo-container{
-  margin-bottom: 3rem;
 }
 @media screen and (max-width: 900px) {
   .main-wrapper{

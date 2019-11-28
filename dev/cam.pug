@@ -3,7 +3,8 @@ append config
   -pageTitle = 'Catalogo Cam'
 prepend styles
   link(rel="stylesheet", href="css/swiper.min.css")
-block content   
+block content
+  +scrollTop   
   header.header-container.container.d-flex
     figure.header-container__img-container
       img(src="img/logo-smart.png", alt="").header-container__img
@@ -12,9 +13,12 @@ block content
       +menu-responsive
   section.camInfo-container.container
     +catalogoConCincoImg('cam 360 grado','$ 50 dolar','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','wyze_cam_front.jpg','wyze_cam_front_2.jpg','wyze_cam_mounted.jpg','wyze_cam_sit_1.jpg','wyze_cam_sit_2.jpg')
-  section.specification-container
-      
+  section.specification-container.d-flex-direction.container
+    h1.specification-container__title specifications
+    .specification-container__information
 block script
   script(src="js/swiper.min.js")
   script(src="js/sliderCatalogo.js")
   script(src="js/menuResponsive.js")
+  script(src="js/accordion.js")
+  script(src="js/scrollTop.js")

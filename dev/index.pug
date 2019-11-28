@@ -4,7 +4,8 @@ append config
 prepend styles
   link(rel="stylesheet", href="css/swiper.min.css")
 block content
-  main.main-wrapper   
+  +scrollTop  
+  main.main-wrapper 
     header.header-container.container.d-flex
       figure.header-container__img-container
         img(src="img/logo-smart.png", alt="").header-container__img
@@ -87,3 +88,5 @@ block script
   script(src="js/sliderProducts.js")
   script(src="js/modalMultimedia.js")
   script(src="js/menuResponsive.js")
+  script(src="js/scrollTop.js")
+
