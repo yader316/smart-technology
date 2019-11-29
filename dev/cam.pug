@@ -13,13 +13,34 @@ block content
       +menu-responsive
   section.camInfo-container.container
     +catalogoConCincoImg('cam 360 grado','$ 50 dolar','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','wyze_cam_front.jpg','wyze_cam_front_2.jpg','wyze_cam_mounted.jpg','wyze_cam_sit_1.jpg','wyze_cam_sit_2.jpg')
-  section.specification-container.d-flex-direction.container
-    h1.specification-container__title specifications
-    .specification-container__information
-      +accordion('1080p Full HD','Longitud focal de 2.8 mm. Lente gran angular de 110º. Sensor CMOS de 1 / 2.9 ". 1920 × 1080 (1080p) full HD. Imágenes tan claras que no se perderá nada.')
-        block contentAccordion
-          .accordion__imgCompare-container.container
-            +imgCompare('img720p.png','img1080p.png')  
+  section.specification-container.d-flex-direction
+    h1.specification-container__title especificaciones 
+    .specification-container__infoHD.d-flex
+      .specification-container__description.d-flex-direction
+        h2.specification-container__subtitle 1080p Full HD
+        .specification-container__linea.border-linea
+        p.specification-container__paragraph 
+          | Longitud focal de 2.8 mm. Lente gran angular de 110º. Sensor CMOS de 1 / 2.9 ". 1920 × 1080 (1080p) full HD. Imágenes tan claras que no se perderá nada.
+      .specification-container__compareImage.container
+        +imgCompare('img720p.png','img1080p.png')
+    .specification-container__infoZoom.d-flex
+      .specification-container__description.d-flex-direction
+        h2.specification-container__subtitle Vision nocturna y esta atento al movimiento y al sonido 
+        .specification-container__linea.border-linea
+        p.specification-container__paragraph 
+          | Con apertura F2.0, filtro IR-CUT y cuatro LED infrarrojos de 850 nm, la visión nocturna mejorada de WyzeCam brinda claridad a una distancia de hasta 30 pies incluso en la oscuridad total.
+        p.specification-container__paragraph 
+          | Reciba una notificación cuando se detecte movimiento o sonido y vea un video clip de la acción para que nunca se pierda nada. Los videoclips se guardan en la nube durante 14 días, de forma gratuita.
+      figure.specification-container__image-container
+        img(src="img/cam-night-vision.png", alt="alt").specification-container__imgVision
+    .specification-container__infoGrabacion.d-flex-direction
+      h2.specification-container__subtitleCenter grabacion continua
+      .specification-container__lineaCenter.border-linea
+      p.specification-container__paragraphCenter
+        | Use una tarjeta microSD (no incluida) para grabación y almacenamiento continuos. La cámara sobrescribirá los archivos más antiguos cuando se llene la tarjeta microSD.
+      figure.specification-container__imgCenter
+        img(src="img/familia.png", alt="alt").specification-container__imgFamilia
+
 block script
   script(src="js/swiper.min.js")
   script(src="js/sliderCatalogo.js")

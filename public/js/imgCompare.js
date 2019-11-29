@@ -37,7 +37,7 @@ function initComparisons() {
       clicked = 1;
       /*execute a function when the slider is moved:*/
       window.addEventListener("mousemove", slideMove);
-      window.addEventListener("touchstart", slideMove);
+      window.addEventListener("touchmove", slideMove);
     }
     function slideFinish() {
       /*the slider is no longer clicked:*/

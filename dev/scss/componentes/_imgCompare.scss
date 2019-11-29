@@ -1,15 +1,17 @@
 .img-comp{
   position: relative;
-  height: 300px; /*should be the same height as the images*/
+  margin-bottom: 1rem;
+  border: 2px solid white;
+  box-shadow: 0 0 5px 1px #2c95c0;
+  height: 305px; /*should be the same height as the images*/
   &__imgContainer{
     position: absolute;
     overflow:hidden;
   }
   &__image{ 
-    width: 800px;
+    width: 605px;
     height: 300px;
     display:block;
-    vertical-align:middle;
   }
   &__title1080p,
   &__title720p{

@@ -6,11 +6,74 @@
   margin-bottom: 3rem;
 }
 .specification-container{
-  margin-bottom: 3rem;
+  padding-bottom: 4rem;
+  background-color: map-get($color-pages, quinto);
   &__title{
     text-align: center;
     text-transform: uppercase;
     padding: 4rem 0;
     font-size: 2.5rem;
+  }
+  &__infoHD,
+  &__infoZoom{
+    padding: 2rem 4rem;
+    margin-bottom: 3rem;
+  }
+  &__infoHD,
+  &__infoGrabacion{
+    background-color: white;
+  }
+  &__infoGrabacion{
+    justify-content: center;
+    align-items: center;
+    background-image: img-url('sd-card.png');
+    background: {
+      repeat: no-repeat;
+      size: 100px;
+      position: 150px 100px;
+    };
+  }
+  &__infoZoom{
+    flex-direction: row-reverse;
+  }
+  &__subtitle{
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+  &__subtitleCenter{
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding: 2rem 2rem 0;
+  }
+  &__linea{
+    width: 30%;
+    margin-left: 1rem;
+  }
+  &__lineaCenter{
+    width: 15%;
+  }
+  &__paragraph{
+    padding: 1rem 4rem 1rem 2rem;
+  }
+  &__paragraphCenter{
+    width: 50%;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  &__description,
+  &__compareImage,
+  &__image-container{
+    width: 50%;
+  }
+  &__image-container{
+   margin-right: 1rem;
+  }
+  &__imgVision,
+  &__imgCenter,
+  &__imgFamilia{
+    width: 100%;
+  }
+  &__description{
+    justify-content: center;
   }
 }

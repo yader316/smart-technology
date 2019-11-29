@@ -612,42 +612,44 @@
 /* line 1, dev/scss/componentes/_imgCompare.scss */
 .img-comp {
   position: relative;
-  height: 300px;
+  margin-bottom: 1rem;
+  border: 2px solid white;
+  box-shadow: 0 0 5px 1px #2c95c0;
+  height: 305px;
   /*should be the same height as the images*/
 }
 
-/* line 4, dev/scss/componentes/_imgCompare.scss */
+/* line 7, dev/scss/componentes/_imgCompare.scss */
 .img-comp__imgContainer {
   position: absolute;
   overflow: hidden;
 }
 
-/* line 8, dev/scss/componentes/_imgCompare.scss */
+/* line 11, dev/scss/componentes/_imgCompare.scss */
 .img-comp__image {
-  width: 800px;
+  width: 605px;
   height: 300px;
   display: block;
-  vertical-align: middle;
 }
 
-/* line 14, dev/scss/componentes/_imgCompare.scss */
+/* line 16, dev/scss/componentes/_imgCompare.scss */
 .img-comp__title1080p, .img-comp__title720p {
   position: absolute;
   top: 10px;
   font-weight: bold;
 }
 
-/* line 20, dev/scss/componentes/_imgCompare.scss */
+/* line 22, dev/scss/componentes/_imgCompare.scss */
 .img-comp__title1080p {
   left: 10px;
 }
 
-/* line 23, dev/scss/componentes/_imgCompare.scss */
+/* line 25, dev/scss/componentes/_imgCompare.scss */
 .img-comp__title720p {
   right: 10px;
 }
 
-/* line 27, dev/scss/componentes/_imgCompare.scss */
+/* line 29, dev/scss/componentes/_imgCompare.scss */
 .img-comp-slider {
   position: absolute;
   z-index: 9;
@@ -667,15 +669,103 @@
 
 /* line 8, dev/scss/componentes/_cam.scss */
 .specification-container {
-  margin-bottom: 3rem;
+  padding-bottom: 4rem;
+  background-color: #f7f5f4;
 }
 
-/* line 10, dev/scss/componentes/_cam.scss */
+/* line 11, dev/scss/componentes/_cam.scss */
 .specification-container__title {
   text-align: center;
   text-transform: uppercase;
   padding: 4rem 0;
   font-size: 2.5rem;
+}
+
+/* line 17, dev/scss/componentes/_cam.scss */
+.specification-container__infoHD, .specification-container__infoZoom {
+  padding: 2rem 4rem;
+  margin-bottom: 3rem;
+}
+
+/* line 22, dev/scss/componentes/_cam.scss */
+.specification-container__infoHD, .specification-container__infoGrabacion {
+  background-color: white;
+}
+
+/* line 26, dev/scss/componentes/_cam.scss */
+.specification-container__infoGrabacion {
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  background-image: url("../img/sd-card.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 150px 100px;
+}
+
+/* line 36, dev/scss/componentes/_cam.scss */
+.specification-container__infoZoom {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+          flex-direction: row-reverse;
+}
+
+/* line 39, dev/scss/componentes/_cam.scss */
+.specification-container__subtitle {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+/* line 43, dev/scss/componentes/_cam.scss */
+.specification-container__subtitleCenter {
+  text-transform: capitalize;
+  font-size: 2rem;
+  padding: 2rem 2rem 0;
+}
+
+/* line 48, dev/scss/componentes/_cam.scss */
+.specification-container__linea {
+  width: 30%;
+  margin-left: 1rem;
+}
+
+/* line 52, dev/scss/componentes/_cam.scss */
+.specification-container__lineaCenter {
+  width: 15%;
+}
+
+/* line 55, dev/scss/componentes/_cam.scss */
+.specification-container__paragraph {
+  padding: 1rem 4rem 1rem 2rem;
+}
+
+/* line 58, dev/scss/componentes/_cam.scss */
+.specification-container__paragraphCenter {
+  width: 50%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* line 63, dev/scss/componentes/_cam.scss */
+.specification-container__description, .specification-container__compareImage, .specification-container__image-container {
+  width: 50%;
+}
+
+/* line 68, dev/scss/componentes/_cam.scss */
+.specification-container__image-container {
+  margin-right: 1rem;
+}
+
+/* line 71, dev/scss/componentes/_cam.scss */
+.specification-container__imgVision, .specification-container__imgCenter, .specification-container__imgFamilia {
+  width: 100%;
+}
+
+/* line 76, dev/scss/componentes/_cam.scss */
+.specification-container__description {
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 /* line 1, dev/scss/componentes/_scroll-top.scss */
@@ -1155,6 +1245,5 @@
     width: 340px;
     height: 300px;
     display: block;
-    vertical-align: middle;
   }
 }
