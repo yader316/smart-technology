@@ -27,7 +27,7 @@ function initComparisons() {
     /*and another function when the mouse button is released:*/
     window.addEventListener("mouseup", slideFinish);
     /*or touched (for touch screens:*/
-    slider.addEventListener("touchmove", slideReady);
+    slider.addEventListener("touchstart", slideReady);
     /*and released (for touch screens:*/
     window.addEventListener("touchstop", slideFinish);
     function slideReady(e) {
@@ -37,7 +37,7 @@ function initComparisons() {
       clicked = 1;
       /*execute a function when the slider is moved:*/
       window.addEventListener("mousemove", slideMove);
-      window.addEventListener("touchmove", slideMove);
+      window.addEventListener("touchstart", slideMove);
     }
     function slideFinish() {
       /*the slider is no longer clicked:*/
