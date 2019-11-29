@@ -324,6 +324,7 @@
   // pages style camConCincoImg resposive
   .camInfo-container{
     width: 100%;
+    margin: 0;
   }
   .catalogo{
     flex-direction: column;
@@ -337,6 +338,8 @@
     }
     &__title{
       text-align: center;
+      padding: .5rem;
+      font-size: 2.5rem;
     }
     &__price{
       padding-left: 2rem;
@@ -351,5 +354,21 @@
       margin-left: 2rem;
     }
   }
- 
+  .accordion__imgCompare-container{
+    width: 100%;
+  }
+ .specification-container{
+   &__title{
+     padding: 0 .5rem 2rem;
+     font-size: 2rem;
+   }
+ }
+ .img-comp{
+  &__image{ 
+    width: 340px;
+    height: 300px;
+    display:block;
+    vertical-align:middle;
+  }
+ }
 }

@@ -16,9 +16,14 @@ block content
   section.specification-container.d-flex-direction.container
     h1.specification-container__title specifications
     .specification-container__information
+      +accordion('1080p Full HD','Longitud focal de 2.8 mm. Lente gran angular de 110º. Sensor CMOS de 1 / 2.9 ". 1920 × 1080 (1080p) full HD. Imágenes tan claras que no se perderá nada.')
+        block contentAccordion
+          .accordion__imgCompare-container.container
+            +imgCompare('img720p.png','img1080p.png')  
 block script
   script(src="js/swiper.min.js")
   script(src="js/sliderCatalogo.js")
   script(src="js/menuResponsive.js")
   script(src="js/accordion.js")
   script(src="js/scrollTop.js")
+  script(src="js/imgCompare.js")

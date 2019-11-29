@@ -544,7 +544,6 @@
 /* line 1, dev/scss/componentes/_accordion.scss */
 .accordion {
   width: 100%;
-  margin: 0 2rem;
 }
 
 /* line 4, dev/scss/componentes/_accordion.scss */
@@ -566,7 +565,13 @@
   text-transform: capitalize;
 }
 
-/* line 20, dev/scss/componentes/_accordion.scss */
+/* line 19, dev/scss/componentes/_accordion.scss */
+.accordion__description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* line 24, dev/scss/componentes/_accordion.scss */
 .closeAccordion .accordion__itemContent {
   height: 0;
   -webkit-transition: height 1s ease-out;
@@ -576,7 +581,7 @@
   float: left;
 }
 
-/* line 26, dev/scss/componentes/_accordion.scss */
+/* line 30, dev/scss/componentes/_accordion.scss */
 .openAccordion .accordion__itemContent {
   padding: 20px 10px;
   background-color: #fff;
@@ -593,7 +598,7 @@
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
-/* line 36, dev/scss/componentes/_accordion.scss */
+/* line 40, dev/scss/componentes/_accordion.scss */
 .openAccordion .accordion__itemHeading {
   margin: 0px;
   border-top-left-radius: 3px;
@@ -604,17 +609,68 @@
   color: #7f8c8d;
 }
 
-/* line 4, dev/scss/componentes/_cam.scss */
+/* line 1, dev/scss/componentes/_imgCompare.scss */
+.img-comp {
+  position: relative;
+  height: 300px;
+  /*should be the same height as the images*/
+}
+
+/* line 4, dev/scss/componentes/_imgCompare.scss */
+.img-comp__imgContainer {
+  position: absolute;
+  overflow: hidden;
+}
+
+/* line 8, dev/scss/componentes/_imgCompare.scss */
+.img-comp__image {
+  width: 800px;
+  height: 300px;
+  display: block;
+  vertical-align: middle;
+}
+
+/* line 14, dev/scss/componentes/_imgCompare.scss */
+.img-comp__title1080p, .img-comp__title720p {
+  position: absolute;
+  top: 10px;
+  font-weight: bold;
+}
+
+/* line 20, dev/scss/componentes/_imgCompare.scss */
+.img-comp__title1080p {
+  left: 10px;
+}
+
+/* line 23, dev/scss/componentes/_imgCompare.scss */
+.img-comp__title720p {
+  right: 10px;
+}
+
+/* line 27, dev/scss/componentes/_imgCompare.scss */
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+/* line 5, dev/scss/componentes/_cam.scss */
 .camInfo-container {
   margin-bottom: 3rem;
 }
 
-/* line 7, dev/scss/componentes/_cam.scss */
+/* line 8, dev/scss/componentes/_cam.scss */
 .specification-container {
   margin-bottom: 3rem;
 }
 
-/* line 9, dev/scss/componentes/_cam.scss */
+/* line 10, dev/scss/componentes/_cam.scss */
 .specification-container__title {
   text-align: center;
   text-transform: uppercase;
@@ -1047,39 +1103,58 @@
   /* line 325, dev/scss/styles.scss */
   .camInfo-container {
     width: 100%;
+    margin: 0;
   }
-  /* line 328, dev/scss/styles.scss */
+  /* line 329, dev/scss/styles.scss */
   .catalogo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 330, dev/scss/styles.scss */
+  /* line 331, dev/scss/styles.scss */
   .catalogo__infoContainer, .catalogo__imgContainer, .catalogo__description {
     width: 100%;
   }
-  /* line 335, dev/scss/styles.scss */
+  /* line 336, dev/scss/styles.scss */
   .catalogo__imgContainer {
     margin: 3rem 0;
   }
-  /* line 338, dev/scss/styles.scss */
+  /* line 339, dev/scss/styles.scss */
   .catalogo__title {
     text-align: center;
+    padding: .5rem;
+    font-size: 2.5rem;
   }
-  /* line 341, dev/scss/styles.scss */
+  /* line 344, dev/scss/styles.scss */
   .catalogo__price {
     padding-left: 2rem;
   }
-  /* line 344, dev/scss/styles.scss */
+  /* line 347, dev/scss/styles.scss */
   .catalogo__linea {
     margin-left: 2rem;
   }
-  /* line 347, dev/scss/styles.scss */
+  /* line 350, dev/scss/styles.scss */
   .catalogo__description {
     padding: 0 2rem 2rem 3rem;
   }
-  /* line 350, dev/scss/styles.scss */
+  /* line 353, dev/scss/styles.scss */
   .catalogo__btn {
     margin-left: 2rem;
+  }
+  /* line 357, dev/scss/styles.scss */
+  .accordion__imgCompare-container {
+    width: 100%;
+  }
+  /* line 361, dev/scss/styles.scss */
+  .specification-container__title {
+    padding: 0 .5rem 2rem;
+    font-size: 2rem;
+  }
+  /* line 367, dev/scss/styles.scss */
+  .img-comp__image {
+    width: 340px;
+    height: 300px;
+    display: block;
+    vertical-align: middle;
   }
 }

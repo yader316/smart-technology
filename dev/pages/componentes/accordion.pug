@@ -3,4 +3,5 @@ mixin accordion(title,description)
     div(class=`accordion__item closeAccordion`)
       h2.accordion__itemHeading #{title}
       .accordion__itemContent.d-flex-direction
-        p.accordion__description #{description}
+        p.accordion__description.container #{description}
+        block contentAccordion

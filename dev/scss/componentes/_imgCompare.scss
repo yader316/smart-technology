@@ -1,0 +1,37 @@
+.img-comp{
+  position: relative;
+  height: 300px; /*should be the same height as the images*/
+  &__imgContainer{
+    position: absolute;
+    overflow:hidden;
+  }
+  &__image{ 
+    width: 800px;
+    height: 300px;
+    display:block;
+    vertical-align:middle;
+  }
+  &__title1080p,
+  &__title720p{
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+  }
+  &__title1080p{
+    left: 10px;
+  }
+  &__title720p{
+    right: 10px;
+  }
+}
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
